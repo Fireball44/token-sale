@@ -1,0 +1,80 @@
+.progress-bar {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.progress-bar div span {
+    position: absolute;
+    font-size: 14px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    left: 7.5px;
+    top: 7.5px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ecf1f3;
+    color: #121212;
+}
+
+.progress-bar .background {
+    background-color: transparent;
+}
+
+.progress-bar .rotate {
+    clip: rect(0 37.5px 75px 0);
+}
+
+.progress-bar .left {
+    clip: rect(0 37.5px 75px 0);
+    opacity: 1;
+}
+.progress-bar{
+  background: transparent;
+}
+.progress-bar .right {
+    clip: rect(0 37.5px 75px 0);
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+@keyframes toggle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+table.dataTable thead th, 
+table.dataTable thead td {
+    border-bottom:none;
+}
+table.dataTable {
+    border-top:none ;
+}
+table.dataTable.no-footer {
+    border-bottom: 1px solid #dee2e6;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    line-height: 75px;
+}
+table.dataTable tbody td a{
+  color: #474747;
+}
+table.table-bordered.dataTable th{
+    border-left-width: 0;
+    font-size: 20px;
+    color: #474747;
+    padding: 15px 18px;
+}
